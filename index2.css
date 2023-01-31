@@ -1,0 +1,62 @@
+﻿.menu {
+    background: #2aa4fc;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    
+    
+}
+.menu ul{
+    display:inline-flex;
+}
+    .menu ul li {
+        list-style-type: none;
+        margin-right: 21px;
+        
+    }
+
+a{
+    text-decoration:none;
+    font-size:20px;
+
+}
+    a:hover {
+        
+        color: #C70039;
+        font-weight: bold;
+    }
+.banner {
+    background-image: url('shopping.jpg');
+    height: 300px;
+    width: 100%;
+    background-repeat: repeat-x;
+    position: relative;
+    top: 60px;
+    
+}
+.left-panel{
+    position:relative;
+    top:10px;
+
+}
+
+.left-panel ul li{
+    list-style:none;
+    margin-bottom:20px;
+}
+
+.main{
+    position:relative;
+    top:-156px;
+    margin-left:389px;
+}
+
+.footer {
+    background: #2aa4fc;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    top: -84px;
+    margin-bottom: 0;
+}
+
