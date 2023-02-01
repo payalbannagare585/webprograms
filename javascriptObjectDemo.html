@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>javascript object demo</title>
+</head>
+<body>
+    <script>
+        //work with object in javascript
+
+        var employee = {
+            empid: 101,
+            empname: "kalyani",
+            salary: 35000,
+            print: function () {
+                return this.empid + " " + this.empname + " " + this.salary
+            },
+            bonus: function () {
+                var b = this.salary * 0.10;
+                this.salary = this.salary + b;
+                return this.salary;
+
+            }
+        };
+        console.log(employee.bonus());
+        console.log(employee.print());
+
+        //student object
+        var student = {
+            studid: 101,
+            studname: "Payal",
+            studfees: 35000,
+            print: function () {
+                return this.studid + " " + this.studname + " " + this.studfees
+            },
+            shcolarship: function () {
+                var s = this.studfees - 0.15;
+                this.studfees = this.studfees + s;
+                return this.studfees;
+
+            }
+        };
+        console.log(student.shcolarship());
+        console.log(student.print());
+
+
+        //book object
+        var book = {
+            bookid: 103,
+            bookname: "Sham chi aai",
+            bookprice: 2000,
+            print: function () {
+                return this.bookid + " " + this.bookname + " " + this.bookprice
+            },
+            discount2: function () {
+                var o = this.bookprice - 0.15;
+                this.bookprice = this.bookprice + o;
+                return this.bookprice;
+
+            }
+        };
+        console.log(book.discount2());
+        console.log(book.print());
+
+
+        //product object-->15% discount on the price
+        var product = {
+            prodid: 101,
+            prodname: "Dell Laptop",
+            prodprice: 35000,
+            print: function () {
+                return this.prodid + " " + this.prodname + " " + this.prodprice
+            },
+            discount: function () {
+                var d = this.prodprice - 0.15;
+                this.prodprice = this.prodprice + d;
+                return this.prodprice;
+
+            }
+        };
+        console.log(product.discount());
+        console.log(product.print());
+    </script>
+
+</body>
+</html>

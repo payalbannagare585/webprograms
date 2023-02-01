@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>home page</title>
+   
+</head>
+<body>
+  
+        Enter a number : <input type="text" id="num1" /> <br />
+        Enter a number : <input type="text" id="num2" /> <br />
+        Result  : <input type="text" id="num3" disabled /> <br />
+        <input type="button" value="Add" onclick="Addition()" />
+        <input type="button" value="Sub" onclick="Substraction()" />
+        <b id="b1"></b>
+        <i id="i1"></i>
+        <p id="p1"></p>
+        <script>
+        function Addition() {
+            var a = document.getElementById("num1").value; // read the value
+            var b = document.getElementById("num2").value;
+
+            var sum = parseInt(a) + parseInt(b);
+            document.getElementById("num3").value = sum; // write the value to the textbox
+            document.getElementById("b1").innerHTML = "Addition is " + sum;
+            document.getElementById("p1").innerHTML = "Addition is " + sum;
+        }
+        function Substraction() {
+            var a = document.getElementById("num1").value; // read the value
+            var b = document.getElementById("num2").value;
+
+            var sub = parseInt(a) - parseInt(b);
+            document.getElementById("num3").value = sub; // write the value to the textbox
+            document.getElementById("i1").innerHTML = "Sub is " + sub;
+        }
+        </script>
+    
+
+
+</body>
+</html>

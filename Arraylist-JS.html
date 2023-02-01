@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="d1">
+    </div>
+
+    <div id="d2">
+    </div>
+
+    <div id="d3">
+    </div>
+
+    <div id="d4">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        // work with object employee arraylist
+        var employees =
+            [
+                {
+                    empid: 101,
+                    empname: "Payal",
+                    salary: 35000,
+                },
+                {
+                    empid: 102,
+                    empname: "Vivek",
+                    salary: 37000,
+                },
+                {
+                    empid: 103,
+                    empname: "chanchal",
+                    salary: 75000,
+                }
+            ];
+
+        var data = "<table class='table table-bordered'><tr><th>Emp Id</th><th>Emp Name</th><th>Salary</th></tr>";
+        for (var i = 0; i < employees.length; i++) {
+            data += "<tr><td>" + employees[i].empid + "</td><td>" + employees[i].empname + "</td><td>" + employees[i].salary
+                + "</td></tr>";
+        }
+        data += "</table>";
+        console.log(data);
+        document.getElementById("d1").innerHTML = data;
+
+
+        //Create a product list & display
+
+        var product =
+            [
+                {
+                    prodid: 201,
+                    prodname: "Dell Laptop",
+                    prodprice: 55000,
+                },
+                {
+                    prodid: 202,
+                    prodname: "hp Laptop",
+                    prodprice: 57000,
+                },
+                {
+                    prodid: 203,
+                    prodname: "acer Laptop",
+                    prodprice: 45000,
+                }
+            ];
+
+        var data = "<table class='table table-bordered'><tr><th>Product Id</th><th>Product Name</th><th>Product Price</th></tr>";
+        for (var i = 0; i < employees.length; i++) {
+            data += "<tr><td>" + product[i].prodid + "</td><td>" + product[i].prodname + "</td><td>" + product[i].prodprice
+                + "</td></tr>";
+        }
+        data += "</table>";
+        console.log(data);
+        document.getElementById("d2").innerHTML = data;
+
+
+        //Create a student list & display
+ 
+        var student =
+            [
+                {
+                    studid: 301,
+                    studname: "Pooja",
+                    fees: 25000,
+                },
+                {
+                    studid: 302,
+                    studname: "bhushan",
+                    fees: 37000,
+                },
+                {
+                    studid: 303,
+                    studname: "vaishnavi",
+                    fees: 35000,
+                }
+            ];
+
+        var data = "<table class='table table-bordered'><tr><th>student Id</th><th>student Name</th><th>fees</th></tr>";
+        for (var i = 0; i < student.length; i++) {
+            data += "<tr><td>" + student[i].studid + "</td><td>" + student[i].studname + "</td><td>" + student[i].fees
+                + "</td></tr>";
+        }
+        data += "</table>";
+        console.log(data);
+        document.getElementById("d3").innerHTML = data;
+
+        //Create a book list & display
+        var book =
+            [
+                {
+                    bookid: 401,
+                    bookname: "Winter Fairy",
+                    bookprice: 250,
+                },
+                {
+                    bookid: 402,
+                    bookname: "The magic Tree",
+                    bookprice: 700,
+                },
+                {
+                    bookid: 403,
+                    bookname: "A Spell Too Far",
+                    bookprice: 350,
+                }
+            ];
+
+        var data = "<table class='table table-bordered'><tr><th>book Id</th><th>book Name</th><th>book price</th></tr>";
+        for (var i = 0; i < book.length; i++) {
+            data += "<tr><td>" + book[i].bookid + "</td><td>" + book[i].bookname + "</td><td>" + book[i].bookprice
+                + "</td></tr>";
+        }
+        data += "</table>";
+        console.log(data);
+        document.getElementById("d4").innerHTML = data;
+
+
+
+    </script>
+
+</body>
+</html>
